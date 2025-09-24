@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int choice;
+    do{
+        printf("\n---menu---\n");
+        pritf("1.say hello\n");
+        printf("2,say Bye\n");
+        printf("3.Exit\n");
+        printf("Enter your choice:");
+        switch(choice){
+            case 1;
+            printf("hello:\n");
+            break;
+            case 2;
+            printf("Bye!\n");
+            break;
+            case 3
+            printf("Exiting..\n");
+            break;
+            default;
+            printf("Invalid choice!\n");
+        }
+        }while(choice!=3);
+    }return 0;
+    
+}
