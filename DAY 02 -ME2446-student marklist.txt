@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    // Hardcoded student details
+    int rollNo = 101;
+    // Name: Sachin Gowtham N (15 characters)
+    char n1 = 'S', n2 = 'a', n3 = 'c', n4 = 'h', n5 = 'i', n6 = 'n', n7 = ' ', n8 = 'G', n9 = 'o', n10 = 'w', n11 = 't', n12 = 'h', n13 = 'a', n14 = 'm', n15 = 'N';
+
+    // Assumed marks
+    int mark1 = 85, mark2 = 78, mark3 = 92, mark4 = 88, mark5 = 80;
+
+    // Calculations
+    int total = mark1 + mark2 + mark3 + mark4 + mark5;
+    float average = total / 5.0;
+    char result;
+
+    if (mark1 >= 35 && mark2 >= 35 && mark3 >= 35 && mark4 >= 35 && mark5 >= 35)
+        result = 'P'; // Pass
+    else
+        result = 'F'; // Fail
+
+    // Output
+    printf("\n--- Student Marklist ---\n");
+    printf("Name        : %c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n", n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13, n14, n15);
+    printf("Roll Number : %d\n", rollNo);
+    printf("Department  : MECH\n");
+    printf("Marks       : %d, %d, %d, %d, %d\n", mark1, mark2, mark3, mark4, mark5);
+    printf("Total       : %d\n", total);
+    printf("Average     : %.2f\n", average);
+    printf("Result      : %c\n", result);
+
