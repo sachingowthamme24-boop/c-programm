@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    // Ask user for number of elements
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    int source[n], copy[n];
+
+    // Get array elements from user
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &source[i]);
+    }
+
+    // Copy elements from source to copy
+    for (int i = 0; i < n; i++) {
+        copy[i] = source[i];
+    }
+
+    // Display copied array
+    printf("Copied array:\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", copy[i]);
+    }
+
+    printf("\n");
+    return 0;
+}
